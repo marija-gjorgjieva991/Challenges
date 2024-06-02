@@ -27,6 +27,11 @@ img {
   margin: 0 auto;
 }
 
+.wrapper {
+  width: 25%;
+  margin: 0 auto;
+}
+
 /* Common */
 
 /* Section Banner */
@@ -129,9 +134,9 @@ p {
   border-radius: 50%;
 }
 
-.container h2,
-p {
+.item1 {
   text-align: center;
+  margin-right: 80px;
 }
 
 /* Section-two */
@@ -199,10 +204,11 @@ h3 {
 /* Section-subscribe */
 
 .subscribe {
-  padding: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 60px 0px;
+}
+
+.subscribe h2 {
+  text-align: center;
 }
 
 .subscribe input {
@@ -296,7 +302,8 @@ footer a:not(:last-child) {
     flex-direction: column;
   }
 
-  .container p {
+  .item1 {
+    margin-right: 0px;
     margin-bottom: 30px;
   }
 
@@ -308,8 +315,17 @@ footer a:not(:last-child) {
     padding: 0px;
   }
 
-  .subscribe {
+  .wrapper {
     width: 100%;
-    padding: 60px 0px;
+  }
+
+  .subscribe {
+    padding: 60px 20px;
+  }
+
+  footer {
+    padding: 20px;
   }
 }
+
+/* Responsivity */
