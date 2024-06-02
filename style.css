@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  font-size: 18px;
 }
 
 h1,
@@ -19,27 +20,233 @@ img {
   width: 100%;
   display: block;
 }
+/* Common */
+
+.wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Common */
+
+/* Section Banner */
 
 .banner {
-  background-image: url("./images/image-01.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: url("./images/image-01.jpg") no-repeat fixed center/cover;
+  background-blend-mode: multiply;
+  background-color: rgb(100, 120, 120);
+  height: 100vh;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
 }
 
 .menu {
+  color: white;
   display: flex;
   justify-content: space-between;
+  padding: 30px;
+}
+
+.menu ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.menu ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.menu li a {
+  color: #8d9b9d;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu li a:hover {
+  color: white;
 }
 
 .content {
-  flex-basis: 30%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content h1,
+p {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .content hr {
   width: 30%;
 }
+
+.paragraph {
+  padding: 30px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  background-color: transparent;
+  padding: 10px 30px;
+  border-color: white;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* Section Banner */
+
+/* Section two */
+
+.section-2 {
+  padding: 60px 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+
+.container h2,
+p {
+  text-align: center;
+}
+
+/* Section-two */
+
+/* Section-three */
+
+.section-3 {
+  background-color: #302d2d;
+  padding: 60px 0px;
+  text-align: center;
+}
+
+.section-3 hr {
+  width: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-3 h2,
+h3 {
+  color: white;
+}
+
+.section-3 p {
+  color: #8f8e8e;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: -30px;
+  padding: 0px 30px;
+}
+
+.flex-item {
+  flex-basis: 33.33%;
+}
+
+.flex-inner {
+  margin-right: 30px;
+  padding: 0px 30px;
+}
+
+.flex-inner i {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.flex-inner p {
+  color: #8f8e8e;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section-three */
+
+/* Section-subscribe */
+
+.subscribe {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #d8d5d5;
+  border-radius: 5px;
+}
+
+.subscribe button {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  border: none;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.subscribe button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* Section-subscribe */
+
+/* Footer */
+
+footer {
+  background-color: #302d2d;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: #efe9e9;
+}
+
+footer p {
+  text-align: center;
+  color: #efe9e9;
+  margin-bottom: 10px;
+}
+
+footer a:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Footer */
