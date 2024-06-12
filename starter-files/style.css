@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 20px;
+  padding-bottom: 63.2px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Common */
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-white {
+  background-color: white;
+  padding: 60px 0;
+}
+
+.section-grey {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+}
+
+.btn {
+  background-color: #ff6f61;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #d24e42;
+}
+
+h2,
+h3 {
+  text-transform: capitalize;
+}
+
+/* Common */
+
+/* Banner */
+
+header {
+  background-image: url("./images/banner.jpg");
+  background-blend-mode: multiply;
+  background-color: #605c5c;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.banner a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  position: absolute;
+  left: 30%;
+}
+
+/* Banner */
+
+/* About */
+
+.about h2 {
+  text-transform: capitalize;
+}
+
+.about p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* About */
+
+/* Classes */
+
+.classes-parent {
+  margin-right: -10px;
+  font-size: 0;
+}
+
+.class-item {
+  width: 50%;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.inner {
+  background-color: white;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+.class-item .img-box {
+  position: relative;
+}
+
+.img-box .discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+  color: red;
+}
+
+.content-box {
+  padding-top: 10px;
+}
+
+/* Classes */
+
+/* Schedule */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid rgb(164, 158, 158);
+  padding: 15px;
+  text-align: left;
+}
+
+/* Schedule */
+
+/* Contact */
+
+.wraper {
+  width: 30vw;
+  margin: 0 auto;
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+}
+
+.form-box input,
+textarea {
+  color: white;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+}
+
+.form-box input:focus,
+textarea:focus {
+  border-color: #f33c2b;
+}
+
+.contact p {
+  margin-bottom: 20px;
+}
+
+/* Contact */
+
+/* Footer */
+
+footer {
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff6f61;
+  padding: 20px;
+}
+
+/* Footer */
