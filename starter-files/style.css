@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.ubuntu-mono-regular {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu Mono", monospace;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.bg-grey {
+  background-color: rgb(246, 246, 246);
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wraper {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.bg-red {
+  background-color: rgb(255, 84, 68);
+}
+
+.bg-purple {
+  background-color: rgb(170, 45, 182);
+}
+
+.bg-cyan {
+  background-color: rgb(30, 194, 164);
+}
+
+.bg-blue {
+  background-color: rgb(39, 139, 224);
+}
+
+.letters {
+  text-transform: uppercase;
+}
+
+/* Navigation bar */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+nav .logo a {
+  color: rgb(48, 47, 47);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+nav .logo:hover {
+  cursor: pointer;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+nav .logo2 {
+  display: none;
+}
+
+.dropdown {
+  display: none;
+}
+
+ul li:hover .dropdown {
+  display: block;
+  position: absolute;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+}
+
+ul li:hover .dropdown ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul li:hover .dropdown ul li {
+  display: block;
+  width: 70px;
+  padding: 10px;
+  margin-left: -30px;
+  text-align: center;
+}
+ul li a {
+  color: rgb(48, 47, 47);
+  text-decoration: none;
+  display: block;
+}
+
+/* Navigation bar */
+
+/* Header */
+
+header h1 {
+  text-align: center;
+}
+
+header span {
+  word-spacing: 5px;
+  font-weight: bold;
+}
+
+header .btn {
+  padding: 15px 30px;
+  background-color: rgb(48, 47, 47);
+  margin-top: 50px;
+}
+
+header .btn:hover {
+  cursor: pointer;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.banner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+
+/* First section */
+
+.first-section {
+  padding: 80px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -25px;
+}
+
+.box-item {
+  flex-basis: 25%;
+}
+
+.box-inner {
+  margin-right: 25px;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.box-item p {
+  color: white;
+  margin-bottom: 0;
+}
+
+.number {
+  font-size: 2rem;
+}
+
+/* First section */
+
+/* Second section  */
+
+.second-section {
+  padding: 80px;
+}
+
+.second-section h1 {
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu button.active {
+  background-color: black;
+}
+
+.menu a.active {
+  color: white;
+}
+
+.menu-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(227, 222, 222);
+  font-weight: bold;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.menu-btn a {
+  text-decoration: none;
+  color: rgb(48, 47, 47);
+}
+
+.menu-btn:hover {
+  background-color: rgb(48, 47, 47);
+}
+
+.menu-btn a:hover {
+  color: white;
+}
+
+.boxes2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.box-item2 {
+  flex-basis: 33.33%;
+}
+
+.box-inner2 {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+}
+
+.box-inner2:hover {
+  border: 1px solid black;
+}
+
+.box-inner2 img {
+  display: inline-block;
+  width: 100%;
+}
+
+.box-inner2 p {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Second section  */
+
+/* Third section */
+
+.third-section {
+  padding: 80px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Third section */
+
+.options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  padding-top: 80px;
+  font-weight: bold;
+}
+
+.option-item {
+  flex-basis: 33.33%;
+}
+
+.option-inner {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.option-inner img {
+  display: inline-block;
+  width: 5%;
+  margin-right: 10px;
+}
+
+.option-inner p {
+  text-transform: uppercase;
+}
+
+/* Footer */
+
+.bg-dark {
+  font-size: 24px;
+  background-color: rgb(84, 79, 79);
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons i:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icons i:hover {
+  cursor: pointer;
+  color: rgb(84, 79, 79);
+}
+
+.footer-down {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.p-left {
+  display: flex;
+  justify-content: center;
+}
+
+.white {
+  color: white;
+  padding: 20px;
+}
+
+.white p {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+/* Footer */
+
+/* Media query */
+
+@media screen and (max-width: 426px) {
+  body {
+    max-width: 425px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav .logo2 {
+    display: block;
+  }
+
+  header {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .boxes {
+    display: block;
+    margin-bottom: -25px;
+  }
+
+  .box-inner {
+    margin-bottom: 25px;
+  }
+
+  .menu-btn:last-child {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .boxes2 {
+    display: block;
+    margin-bottom: -25px;
+  }
+
+  .box-inner2 {
+    margin-bottom: 25px;
+  }
+
+  .option1,
+  .option2 {
+    flex-basis: 50%;
+  }
+
+  .option1,
+  .option2 {
+    line-height: 50px;
+    font-size: 12px;
+  }
+
+  .option3 {
+    display: none;
+  }
+
+  .footer-down {
+    font-size: 6px;
+  }
+}
