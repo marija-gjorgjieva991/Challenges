@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 h2 h3 p div section hr {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+header {
+  margin-top: 0px;
+}
+
+body {
+  margin: 0;
+}
+
+/* HEADER */
+.bg-image {
+  margin-bottom: 0;
+  background-color: #333333;
+}
+
+.bg-grey {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0 auto;
+}
+#word {
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.btn-search {
+  margin: 0px 300px;
+  width: 300px;
+
+  background-color: rgb(206, 203, 203);
+  border-radius: 5px;
+
+  color: white;
+  border: 2px solid #333333;
+  padding: 10px;
+
+  text-decoration: none;
+
+  display: inline-block;
+}
+
+.btn-search:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+
+/* HEADER */
+
+/* SECTIONS */
+.bg-color {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.bg-color2 {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.wrap {
+  background-color: white;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.style {
+  border: 2px solid rgb(247, 241, 241);
+  border-radius: 10px;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-size {
+  font-size: 20px;
+}
+h3 a {
+  color: #caca0b;
+}
+
+.grey {
+  color: #8e8a8a;
+  font-size: 12px;
+}
+.top-m {
+  margin-top: 20px;
+}
+.hr-m {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.btn {
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #969595;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+/* FOOTER */
+
+.icons a {
+  color: #caca0b;
+}
+.icons a:not(:last-child) {
+  margin-right: 10px;
+  padding: 20px 0;
+}
+
+/* FOOTER */
+
+/* ICONS-SECOND PAGE */
+.icons2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.icons2 i:not(:last-child) {
+  margin-right: 20px;
+}
+.icons2 i:hover {
+  color: #caca0b;
+  cursor: pointer;
+}
+/* ICONS-SECOND PAGE */
