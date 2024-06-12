@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.flex {
+  @include mix.flex(33.33%, 50%, 100%);
+}
+
+.box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.4s all;
+  }
+
+  &:hover::before {
+    opacity: 0;
+  }
+
+  &:hover img {
+    opacity: 0;
+  }
+
+  .background-text {
+    color: var.$text-color-secondary;
+    position: absolute;
+    opacity: 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  &:hover .background-text {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+footer {
+  width: 25%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: var.$text-color-secondary;
+  padding-left: var.$gutter-base;
+  padding-bottom: var.$gutter-base * 2;
+  padding-right: var.$gutter-base * 3;
+
+  a {
+    text-decoration: none;
+    color: var.$text-color-secondary;
+    font-weight: var.$font-weight-bold;
+  }
+
+  @include mix.tablet-styles {
+    display: none;
+  }
+}
