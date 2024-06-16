@@ -15,3 +15,15 @@ li {
 .carousel-control-prev-icon button {
   font-weight: 600;
 }
+
+.section-4 {
+  background-image: url("./images/lights.jpg");
+  background-attachment: fixed;
+}
+
+.section-5 {
+  background-image: url("./images/media.jpg");
+  background-color: rgb(45, 41, 41);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
