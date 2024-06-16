@@ -11,3 +11,7 @@ li {
 .navbar-toggler {
   line-height: normal;
 }
+
+.carousel-control-prev-icon button {
+  font-weight: 600;
+}
