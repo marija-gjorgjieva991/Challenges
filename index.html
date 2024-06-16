@@ -22,7 +22,9 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-dark text-uppercase text-secondary">
       <div class="container-fluid">
-        <div><a class="navbar-brand text-secondary" href="#">Glozzom</a></div>
+        <div>
+          <a class="navbar-brand text-secondary" href="index.html">Glozzom</a>
+        </div>
         <button
           class="navbar-toggler shadow-none border-0 text-light"
           type="button"
@@ -46,21 +48,26 @@
             100px;
           >
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#"
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">About us</a>
+              <a class="nav-link text-secondary" href="about.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">Services</a>
+              <a class="nav-link text-secondary" href="services.html"
+                >Services</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">Blog</a>
+              <a class="nav-link text-secondary" href="blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">Contact</a>
+              <a class="nav-link text-secondary" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -265,7 +272,7 @@
       <h3 class="text-center">Photo gallery</h3>
       <p class="text-center">Check out our photos.</p>
       <div class="row">
-        <div class="col-4 mb-4">
+        <div class="col-md-4 col-sm-12 mb-4">
           <a data-bs-toggle="modal" data-bs-target="#exampleModal1"
             ><img src="./images/1.png" alt="Picture-1"
           /></a>
@@ -283,7 +290,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 mb-4">
+        <div class="col-md-4 col-sm-12 mb-4">
           <a data-bs-toggle="modal" data-bs-target="#exampleModal2"
             ><img src="./images/2.png" alt="Picture-2"
           /></a>
@@ -301,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 mb-4">
+        <div class="col-md-4 col-sm-12 mb-4">
           <a data-bs-toggle="modal" data-bs-target="#exampleModal3"
             ><img src="./images/3.png" alt="Picture-3"
           /></a>
@@ -319,7 +326,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12 mb-4">
           <a data-bs-toggle="modal" data-bs-target="#exampleModal4"
             ><img src="./images/4.png" alt="Picture-4"
           /></a>
@@ -337,7 +344,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12 mb-4">
           <a data-bs-toggle="modal" data-bs-target="#exampleModal5"
             ><img src="./images/5.png" alt="Picture-5"
           /></a>
@@ -355,7 +362,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 mb-4">
+        <div class="col-md-4 col-sm-12 mb-4">
           <a data-bs-toggle="modal" data-bs-target="#exampleModal6"
             ><img src="./images/6.png" alt="Picture-6"
           /></a>
@@ -375,6 +382,44 @@
         </div>
       </div>
     </section>
+    <section class="container-fluid bg-dark text-light text-center p-4">
+      <h3>Sign Up for our newsletter</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+        dignissimos quae voluptatem enim placeat minus natus? Natus expedita
+        modi quidem?
+      </p>
+      <form class="row g-3 d-md-flex justify-content-center d-sm-block">
+        <div class="col-md-auto col-sm-12">
+          <label for="inputName" class="visually-hidden">Enter Name</label>
+          <input
+            type="name"
+            class="form-control d-md-flex d-sm-block"
+            id="inputName"
+            placeholder="Enter Name"
+          />
+        </div>
+        <div class="col-md-auto col-sm-12">
+          <label for="inputEmail" class="visually-hidden">Enter E-mail</label>
+          <input
+            type="email"
+            class="form-control d-md-flex d-sm-block"
+            id="inputEmail"
+            placeholder="Enter E-mail"
+          />
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary d-md-flex d-sm-block">
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <p class="text-light text-center bg-black p-3">
+        Copyright 2018 <i class="fa-regular fa-copyright"></i> Glozzom
+      </p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
