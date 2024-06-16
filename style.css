@@ -12,13 +12,10 @@ li {
   line-height: normal;
 }
 
-.carousel-control-prev-icon button {
-  font-weight: 600;
-}
-
 .section-4 {
   background-image: url("./images/lights.jpg");
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .section-5 {
@@ -26,4 +23,32 @@ li {
   background-color: rgb(45, 41, 41);
   background-blend-mode: multiply;
   background-attachment: fixed;
+  background-size: cover;
+}
+
+.banner {
+  background-image: url("./images/image1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.flex-section2 img {
+  margin-top: -50px;
+}
+
+.carousel-control-prev {
+  justify-content: left;
+}
+
+.carousel-control-prev i {
+  font-size: 30px;
+}
+
+.carousel-control-next {
+  justify-content: right;
+}
+
+.carousel-control-next i {
+  font-size: 30px;
 }
