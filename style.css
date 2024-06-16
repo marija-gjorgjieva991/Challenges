@@ -1,0 +1,13 @@
+img {
+  width: 100%;
+  display: block;
+}
+
+.navbar a,
+li {
+  color: white;
+}
+
+.navbar-toggler {
+  line-height: normal;
+}
