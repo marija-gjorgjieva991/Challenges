@@ -52,3 +52,25 @@ li {
 .carousel-control-next i {
   font-size: 30px;
 }
+
+.card ul i {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btn {
+  color: white;
+  text-align: left;
+  border: none;
+  background: transparent;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.acc-section {
+  background-color: rgb(57, 56, 56);
+}
