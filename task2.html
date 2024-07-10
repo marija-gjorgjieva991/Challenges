@@ -6,6 +6,28 @@
     <title>Task 2</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      const grade = parseFloat(prompt("Enter your own grade!"));
+      const myH = document.createElement("h1");
+
+      if (grade >= 0 && grade <= 59) {
+        myH.innerText = "Your grade is F";
+        myH.style.color = "red";
+      } else if (grade >= 60 && grade <= 69) {
+        myH.innerText = "Your grade is D";
+        myH.style.color = "orange";
+      } else if (grade >= 70 && grade <= 79) {
+        myH.innerText = "Your grade is C";
+        myH.style.color = "yellow";
+      } else if (grade >= 80 && grade <= 89) {
+        myH.innerText = "Your grade is B";
+        myH.style.color = "blue";
+      } else {
+        myH.innerText = "Your grade is A";
+        myH.style.color = "green";
+      }
+
+      document.body.appendChild(myH);
+    </script>
   </body>
 </html>
