@@ -5,5 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge Javascript 01</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      const year = +prompt(
+        "Enter the year which you like to know is leap or is not leap:"
+      );
+      const myP = document.createElement("p");
+      myP.style.fontStyle = "30px";
+      myP.style.fontWeight = "bold";
+
+      if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+        myP.innerText = "The year is a leap year";
+        myP.style.color = "green";
+      } else {
+        myP.innerText = "This year is a leap year";
+        myP.style.color = "red";
+      }
+
+      document.body.appendChild(myP);
+    </script>
+  </body>
 </html>
