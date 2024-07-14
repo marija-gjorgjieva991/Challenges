@@ -10,43 +10,50 @@
       const grade = parseFloat(prompt("Enter your own grade!"));
       const myH = document.createElement("h1");
 
-      if (grade >= 0 && grade <= 59) {
-        myH.innerText = "Your grade is F";
-        myH.style.color = "red";
-      } else if (grade >= 60 && grade <= 69) {
-        myH.innerText = "Your grade is D";
-        myH.style.color = "orange";
-      } else if (grade >= 70 && grade <= 79) {
-        myH.innerText = "Your grade is C";
-        myH.style.color = "yellow";
+      if (grade >= 90 && grade <= 100) {
+        myH.innerText = "Your grade is A";
+        myH.style.color = "green";
       } else if (grade >= 80 && grade <= 89) {
         myH.innerText = "Your grade is B";
         myH.style.color = "blue";
+      } else if (grade >= 70 && grade <= 79) {
+        myH.innerText = "Your grade is C";
+        myH.style.color = "yellow";
+      } else if (grade >= 60 && grade <= 69) {
+        myH.innerText = "Your grade is D";
+        myH.style.color = "orange";
+      } else if (grade >= 0 && grade <= 59) {
+        myH.innerText = "Your grade is F";
+        myH.style.color = "red";
       } else {
-        myH.innerText = "Your grade is A";
-        myH.style.color = "green";
+        myH.innerText = "Your input is invalid";
+        myH.style.color = "pink";
       }
 
       // switch (true) {
-      //   case grade >= 0 && grade <= 59:
-      //     myH.innerText = "Your grade is F";
-      //     myH.style.color = "red";
-      //     break;
-      //   case grade >= 60 && grade <= 69:
-      //     myH.innerText = "Your grade is D";
-      //     myH.style.color = "orange";
-      //     break;
-      //   case grade >= 70 && grade <= 79:
-      //     myH.innerText = "Your grade is C";
-      //     myH.style.color = "yellow";
+      //   case grade >= 90 && grade <= 100:
+      //     myH.innerText = "Your grade is A";
+      //     myH.style.color = "green";
       //     break;
       //   case grade >= 80 && grade <= 89:
       //     myH.innerText = "Your grade is B";
       //     myH.style.color = "blue";
       //     break;
+      //   case grade >= 70 && grade <= 79:
+      //     myH.innerText = "Your grade is C";
+      //     myH.style.color = "yellow";
+      //     break;
+      //   case grade >= 60 && grade <= 69:
+      //     myH.innerText = "Your grade is D";
+      //     myH.style.color = "orange";
+      //     break;
+      //   case grade >= 0 && grade <= 59:
+      //     myH.innerText = "Your grade is F";
+      //     myH.style.color = "red";
+      //     break;
       //   default:
-      //     myH.innerText = "Your grade is A";
-      //     myH.style.color = "green";
+      //     myH.innerText = "Your input is invalid";
+      //     myH.style.color = "pink";
       //     break;
       // }
       document.body.appendChild(myH);
