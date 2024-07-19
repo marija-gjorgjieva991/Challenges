@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise 01</title>
+  </head>
+  <body>
+    <script>
+      let array = new Array();
+
+      for (i = 0; i < 6; i++) {
+        array[i] = +prompt("Enter numbers:");
+      }
+
+      function transformArray(arr) {
+        for (i = 0; i < arr.length; i++) {
+          let newArr = new Array();
+          if (array[i] < 10) {
+            newArr[i] = arr[i] * 2;
+          } else {
+            newArr[i] = arr[i] * 4;
+          }
+
+          document.body.append(newArr);
+        }
+      }
+
+      transformArray(array);
+    </script>
+  </body>
+</html>
