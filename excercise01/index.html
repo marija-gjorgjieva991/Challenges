@@ -8,6 +8,8 @@
   <body>
     <script>
       let array = new Array();
+      let newArr = new Array();
+      myH = document.createElement("h2");
 
       for (i = 0; i < 6; i++) {
         array[i] = +prompt("Enter numbers:");
@@ -15,15 +17,14 @@
 
       function transformArray(arr) {
         for (i = 0; i < arr.length; i++) {
-          let newArr = new Array();
           if (array[i] < 10) {
-            newArr[i] = arr[i] * 2;
+            newArr[i] = array[i] * 2;
           } else {
-            newArr[i] = arr[i] * 4;
+            newArr[i] = array[i] * 4;
           }
-
-          document.body.append(newArr);
         }
+        myH.innerText = "Transformed array is: [" + newArr + "]";
+        document.body.append(myH);
       }
 
       transformArray(array);

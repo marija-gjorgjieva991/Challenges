@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise02</title>
+  </head>
+  <body>
+    <div id="password"></div>
+    <div id="message"></div>
+
+    <script>
+      let pass = prompt("Enter your password:");
+      let passDiv = document.querySelector("#password");
+      let message = document.querySelector("#message");
+      let msg = document.createElement("h2");
+
+      passDiv.append(pass);
+
+      function validate() {
+        if (pass.length < 8) {
+          msg.innerText = "Password must be at least 8 characters long!";
+        } else if (!/[A-Z]/.test(pass)) {
+          msg.innerText = "Password must contain uppercase!";
+        } else if (!/[0-9]/.test(pass)) {
+          msg.innerText = "Password must contain number!";
+        } else {
+          msg.innerText = "Your password is valid!";
+        }
+        message.append(msg);
+      }
+
+      validate(pass);
+    </script>
+  </body>
+</html>
