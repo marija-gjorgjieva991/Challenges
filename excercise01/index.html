@@ -11,12 +11,12 @@
       let newArr = new Array();
       myH = document.createElement("h2");
 
-      for (i = 0; i < 6; i++) {
+      for (let i = 0; i < 6; i++) {
         array[i] = +prompt("Enter numbers:");
       }
 
       function transformArray(arr) {
-        for (i = 0; i < arr.length; i++) {
+        for (let i = 0; i < arr.length; i++) {
           if (array[i] < 10) {
             newArr[i] = array[i] * 2;
           } else {

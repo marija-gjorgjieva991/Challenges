@@ -18,7 +18,7 @@
 
         let headerRow = document.createElement("tr");
         body.appendChild(headerRow);
-        for (var j = 0; j < columns; j++) {
+        for (let j = 0; j < columns; j++) {
           let headerColumn = document.createElement("th");
           body.appendChild(headerColumn);
           headerColumn.textContent = "Heading " + (j + 1);
@@ -27,7 +27,7 @@
         for (let i = 0; i < rows; i++) {
           let row = document.createElement("tr");
           body.appendChild(row);
-          for (var j = 0; j < columns; j++) {
+          for (let j = 0; j < columns; j++) {
             let col = document.createElement("td");
             body.appendChild(col);
             col.textContent = "Row " + (i + 1) + " Col " + (j + 1);
