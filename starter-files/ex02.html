@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise 02</title>
+  </head>
+  <body>
+    <h1>Excercise 02 - Border on picture</h1>
+    <script>
+      let picture = [["abc"], ["ded"]];
+
+      function addBorder(arr) {
+        let word = arr[0][0];
+        let numCols = word.split("");
+        const newRow = "*".repeat(numCols.length + 2);
+        const newArray = [];
+        newArray.push(newRow);
+
+        for (let i = 0; i < arr.length; i++) {
+          const row = arr[i];
+          const borderRow = "*" + row + "*";
+          newArray.push(borderRow);
+        }
+
+        newArray.push(newRow);
+        console.log(newArray);
+      }
+
+      addBorder(picture);
+    </script>
+  </body>
+</html>
