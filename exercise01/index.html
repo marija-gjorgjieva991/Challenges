@@ -5,5 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Excercise 01</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      function chunkArray(array, size) {
+        const result = [];
+        if (size <= 0) {
+          console.log("The chunk size must be bigger than zero");
+        }
+
+        for (let i = 0; i < array.length; i += size) {
+          const subArr = array.slice(i, i + size);
+          result.push(subArr);
+        }
+
+        return result;
+      }
+
+      const myArray = [1, 2, 3, 4, 5];
+      const size = 2;
+      console.log(chunkArray(myArray, size));
+    </script>
+  </body>
 </html>
