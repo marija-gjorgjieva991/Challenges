@@ -13,14 +13,14 @@
         if (numbers < 2) return false;
 
         for (let i = 2; i < numbers; i++) {
-          if (numbers % i == 0) {
+          if (numbers % i === 0) {
             return false;
           }
         }
         return true;
       }
-      numbers.forEach(function (element) {
-        const item = isPrime(element);
+      numbers.forEach(function (num) {
+        const item = isPrime(num);
         if (item) {
           result.push("true");
         } else {
