@@ -1,33 +1,126 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Bikes</title>
-	<meta name="keywords" content="html,css,javaScript">
-	<meta name="description" content="Bikes">
-	<meta name="author" content="">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <head>
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <img src="./img/logo.png" alt="Logo" class="logo" />
+        <ul class="menu">
+          <li><a href="">HOME</a></li>
+          <li><a href="">BIKES</a></li>
+          <li><a href="">GEAR</a></li>
+          <li><a href="">PARTS</a></li>
+          <li><a href="">TIRES</a></li>
+          <li><a href="">SERVICE-INFO</a></li>
+          <li><a href="">CATALOGUES</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+        <div>
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+      </header>
+      <hr />
+      <h1>BIKES</h1>
+      <hr />
+      <section class="main-section">
+        <div class="filters-container">
+          <h3>Filter by:</h3>
+          <p>Show all</p>
+          <hr />
+          <h4>Gender</h4>
+          <p>Male</p>
+          <p>Female</p>
+          <hr />
+          <h4>Brand</h4>
+          <ul class="brand-list">
+            <li>Le grand bikes</li>
+            <li>Kross</li>
+            <li>Explorer</li>
+            <li>Visitor</li>
+            <li>Pony</li>
+            <li>Force</li>
+            <li>E-bikes</li>
+            <li>Ideal</li>
+          </ul>
+        </div>
 
-	<!-- Latest compiled and minified BOOTSTRAP CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <div class="bikes-container"></div>
+      </section>
+    </section>
 
-	<!-- Local CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <footer>
+      <div class="social-content">
+        <h3>Social share</h3>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="event-info">
+        <h3>Event info</h3>
+        <a href="">Enter now</a>
+        <a href="">Event info</a>
+        <a href="">Course maps</a>
+        <a href="">Race pack</a>
+        <a href="">Results</a>
+        <a href="">FAQs</a>
+        <a href="">Am i registered?</a>
+      </div>
+      <div class="border"></div>
+      <div class="registration">
+        <h3>Registration</h3>
+        <a href="">Volunteers</a>
+        <a href="">Gallery</a>
+        <a href="">Press</a>
+        <a href="">Results</a>
+        <a href="">Privacy policy</a>
+        <a href="">Service plus</a>
+        <a href="">Contacts</a>
+      </div>
+      <div class="border"></div>
+      <div class="schedule">
+        <h3>Schedule</h3>
+        <a href="">Gallery</a>
+        <a href="">About</a>
+        <a href="">Videos</a>
+        <a href="">Results</a>
+        <a href="">FAQs</a>
+        <a href="">Results</a>
+        <a href="">Volunteers</a>
+      </div>
+    </footer>
 
-	<!-- Font-awesome 5 cdn -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-</head>
-<body>
-	<!-- start here -->
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	
-	<!-- jQuery library -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
-
-	<script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
