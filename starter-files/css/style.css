@@ -2,30 +2,36 @@ body {
   background-color: #e7e7e7;
 }
 
-.container {
+.body-container {
   width: 90%;
-  padding: 10px;
+  margin: 0 auto;
   background-color: white;
 }
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .logo {
   width: 80px;
   height: 80px;
+  margin-left: 20px;
 }
 
 .menu {
   display: flex;
+  margin: 0px 160px;
 }
 
 .menu li {
   list-style: none;
-  margin-right: 15px;
+  padding: 15px;
+}
+
+.menu li:hover {
+  background-color: rgb(222, 222, 222);
 }
 
 .menu li a {
@@ -33,6 +39,10 @@ header {
   color: black;
   font-size: large;
   font-weight: 700;
+}
+
+.menu li a:hover {
+  color: orange;
 }
 
 header A {
@@ -45,15 +55,66 @@ header i {
   margin-left: 10px;
 }
 
+header i:hover {
+  color: orange;
+}
+
+.heading {
+  padding: 0px 20px;
+}
+
 /* MAIN SECTION */
 
 .main-section {
-  padding: 10px;
+  padding-left: 20px;
   display: flex;
 }
 
 .filters-container {
   flex-basis: 20%;
+}
+
+.filter-count {
+  background-color: rgb(222, 222, 222);
+  padding: 0px 5px;
+  border-radius: 40%;
+  font-weight: bold;
+}
+
+.filters-container p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filters-container p:hover {
+  color: orange;
+}
+
+.filters-container p:hover .show-all {
+  color: black;
+  background-color: orange;
+}
+
+.filters-container p:hover .male {
+  color: black;
+  background-color: orange;
+}
+
+.filters-container p:hover .female {
+  color: black;
+  background-color: orange;
+}
+
+.filters-container p.active {
+  color: orange;
+}
+
+.filters-container p.active span {
+  color: black;
+  background-color: orange;
 }
 
 .brand-list {
@@ -62,6 +123,37 @@ header i {
 
 .brand-list li {
   list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brand-list li:hover {
+  color: orange;
+}
+
+.brand-list li:hover .brand-count {
+  color: black;
+  background-color: orange;
+}
+
+.brand-list li.active {
+  color: orange;
+}
+
+.brand-list li.active .brand-count {
+  color: black;
+  background-color: orange;
+}
+
+.brand-count {
+  background-color: rgb(222, 222, 222);
+  padding: 0px 5px;
+  border-radius: 40%;
+  font-weight: bold;
 }
 
 /* MAIN SECTION */
@@ -72,13 +164,24 @@ header i {
   display: flex;
   flex-basis: 80%;
   flex-wrap: wrap;
+  padding-left: 20px;
   gap: 20px;
 }
 
 .card {
   width: calc(33.333% - 20px);
+  max-height: fit-content;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  border: 2px solid orange;
+  cursor: pointer;
+}
+
+.card img:hover {
+  transform: scale(1.1);
 }
 
 .card-body {
@@ -113,10 +216,10 @@ header i {
 
 footer {
   background-color: #d3d3d3;
-  width: 90%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 20px;
   padding: 20px;
 }
 
@@ -130,10 +233,9 @@ footer a {
   padding-bottom: 10px;
 }
 
-.border {
-  border: 1px solid rgb(95, 93, 93);
+.border-line {
+  border: 2px solid rgb(168, 168, 168);
   margin-right: 10px;
-  text-align: center;
 }
 
 .social-content {
@@ -148,10 +250,20 @@ footer a {
   flex-basis: 25%;
 }
 
+.event-info a:hover {
+  color: orange;
+  cursor: pointer;
+}
+
 .registration {
   display: flex;
   flex-direction: column;
   flex-basis: 25%;
+}
+
+.registration a:hover {
+  color: orange;
+  cursor: pointer;
 }
 
 .schedule {
@@ -160,12 +272,13 @@ footer a {
   flex-basis: 25%;
 }
 
-.social-icons {
-  display: flex;
+.schedule a:hover {
+  color: orange;
+  cursor: pointer;
 }
 
-.social-icons i:hover {
-  color: grey;
+.social-icons {
+  display: flex;
 }
 
 .social-icons a {
@@ -176,6 +289,10 @@ footer a {
   text-align: center;
   padding: 20px;
   cursor: pointer;
+}
+
+.social-icons a:hover {
+  background-color: grey;
 }
 
 /* FOOTER */

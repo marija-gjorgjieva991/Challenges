@@ -23,7 +23,7 @@
     />
   </head>
   <body>
-    <section class="container">
+    <section class="body-container">
       <header>
         <img src="./img/logo.png" alt="Logo" class="logo" />
         <ul class="menu">
@@ -41,79 +41,105 @@
           <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
         </div>
       </header>
-      <hr />
-      <h1>BIKES</h1>
-      <hr />
+      <div class="heading">
+        <hr />
+        <h1>BIKES</h1>
+        <hr />
+      </div>
       <section class="main-section">
         <div class="filters-container">
           <h3>Filter by:</h3>
-          <p>Show all</p>
+          <p id="show-all">Show all<span class="show-all"></span></p>
           <hr />
           <h4>Gender</h4>
-          <p>Male</p>
-          <p>Female</p>
+          <p id="male">Male<span class="male"></span></p>
+          <p id="female">Female<span class="female"></span></p>
           <hr />
           <h4>Brand</h4>
           <ul class="brand-list">
-            <li>Le grand bikes</li>
-            <li>Kross</li>
-            <li>Explorer</li>
-            <li>Visitor</li>
-            <li>Pony</li>
-            <li>Force</li>
-            <li>E-bikes</li>
-            <li>Ideal</li>
+            <li>
+              <span class="brand-name">Le grand bikes</span
+              ><span class="brand-count"></span>
+            </li>
+            <li>
+              <span class="brand-name">Kross</span
+              ><span class="brand-count"></span>
+            </li>
+            <li>
+              <span class="brand-name">Explorer</span
+              ><span class="brand-count"></span>
+            </li>
+            <li>
+              <span class="brand-name">Visitor</span
+              ><span class="brand-count"></span>
+            </li>
+            <li>
+              <span class="brand-name">Pony</span
+              ><span class="brand-count"></span>
+            </li>
+            <li>
+              <span class="brand-name">Force</span
+              ><span class="brand-count"></span>
+            </li>
+            <li>
+              <span class="brand-name">E-bikes</span
+              ><span class="brand-count"></span>
+            </li>
+            <li>
+              <span class="brand-name">Ideal</span
+              ><span class="brand-count"></span>
+            </li>
           </ul>
         </div>
 
         <div class="bikes-container"></div>
       </section>
-    </section>
 
-    <footer>
-      <div class="social-content">
-        <h3>Social share</h3>
-        <div class="social-icons">
-          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+      <footer>
+        <div class="social-content">
+          <h3>Social share</h3>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="border"></div>
-      <div class="event-info">
-        <h3>Event info</h3>
-        <a href="">Enter now</a>
-        <a href="">Event info</a>
-        <a href="">Course maps</a>
-        <a href="">Race pack</a>
-        <a href="">Results</a>
-        <a href="">FAQs</a>
-        <a href="">Am i registered?</a>
-      </div>
-      <div class="border"></div>
-      <div class="registration">
-        <h3>Registration</h3>
-        <a href="">Volunteers</a>
-        <a href="">Gallery</a>
-        <a href="">Press</a>
-        <a href="">Results</a>
-        <a href="">Privacy policy</a>
-        <a href="">Service plus</a>
-        <a href="">Contacts</a>
-      </div>
-      <div class="border"></div>
-      <div class="schedule">
-        <h3>Schedule</h3>
-        <a href="">Gallery</a>
-        <a href="">About</a>
-        <a href="">Videos</a>
-        <a href="">Results</a>
-        <a href="">FAQs</a>
-        <a href="">Results</a>
-        <a href="">Volunteers</a>
-      </div>
-    </footer>
+        <div class="border-line"></div>
+        <div class="event-info">
+          <h3>Event info</h3>
+          <a href="">Enter now</a>
+          <a href="">Event info</a>
+          <a href="">Course maps</a>
+          <a href="">Race pack</a>
+          <a href="">Results</a>
+          <a href="">FAQs</a>
+          <a href="">Am i registered?</a>
+        </div>
+        <div class="border-line"></div>
+        <div class="registration">
+          <h3>Registration</h3>
+          <a href="">Volunteers</a>
+          <a href="">Gallery</a>
+          <a href="">Press</a>
+          <a href="">Results</a>
+          <a href="">Privacy policy</a>
+          <a href="">Service plus</a>
+          <a href="">Contacts</a>
+        </div>
+        <div class="border-line"></div>
+        <div class="schedule">
+          <h3>Schedule</h3>
+          <a href="">Gallery</a>
+          <a href="">About</a>
+          <a href="">Videos</a>
+          <a href="">Results</a>
+          <a href="">FAQs</a>
+          <a href="">Results</a>
+          <a href="">Volunteers</a>
+        </div>
+      </footer>
+    </section>
 
     <!-- jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
