@@ -1,5 +1,10 @@
 body {
-  background-color: #e7e7e7;
+  background-color: #d3d3d3;
+}
+
+h3,
+h4 {
+  font-weight: bold;
 }
 
 .body-container {
@@ -12,6 +17,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 40px;
 }
 
 .logo {
@@ -31,7 +37,7 @@ header {
 }
 
 .menu li:hover {
-  background-color: rgb(222, 222, 222);
+  background-color: #d3d3d3;
 }
 
 .menu li a {
@@ -45,13 +51,13 @@ header {
   color: orange;
 }
 
-header A {
+header a {
   text-decoration: none;
   color: black;
 }
 
 header i {
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 10px;
 }
 
@@ -60,7 +66,11 @@ header i:hover {
 }
 
 .heading {
-  padding: 0px 20px;
+  padding: 10px 20px;
+}
+
+.heading h1 {
+  margin-bottom: 0;
 }
 
 /* MAIN SECTION */
@@ -89,22 +99,28 @@ header i:hover {
   transition: all 0.3s ease;
 }
 
+.filters-container .show-all,
+.female,
+.male {
+  color: #5c5c5c;
+}
+
 .filters-container p:hover {
   color: orange;
 }
 
 .filters-container p:hover .show-all {
-  color: black;
+  color: #5c5c5c;
   background-color: orange;
 }
 
 .filters-container p:hover .male {
-  color: black;
+  color: #5c5c5c;
   background-color: orange;
 }
 
 .filters-container p:hover .female {
-  color: black;
+  color: #5c5c5c;
   background-color: orange;
 }
 
@@ -113,7 +129,7 @@ header i:hover {
 }
 
 .filters-container p.active span {
-  color: black;
+  color: #5c5c5c;
   background-color: orange;
 }
 
@@ -136,7 +152,7 @@ header i:hover {
 }
 
 .brand-list li:hover .brand-count {
-  color: black;
+  color: #5c5c5c;
   background-color: orange;
 }
 
@@ -145,12 +161,13 @@ header i:hover {
 }
 
 .brand-list li.active .brand-count {
-  color: black;
+  color: #5c5c5c;
   background-color: orange;
 }
 
 .brand-count {
   background-color: rgb(222, 222, 222);
+  color: #5c5c5c;
   padding: 0px 5px;
   border-radius: 40%;
   font-weight: bold;
@@ -215,12 +232,12 @@ header i:hover {
 /* FOOTER */
 
 footer {
-  background-color: #d3d3d3;
+  background-color: #e7e7e7;
   display: flex;
   justify-content: center;
   margin: 0 auto;
   margin-top: 20px;
-  padding: 20px;
+  padding: 60px 20px;
 }
 
 footer h3 {
@@ -234,8 +251,8 @@ footer a {
 }
 
 .border-line {
-  border: 2px solid rgb(168, 168, 168);
-  margin-right: 10px;
+  border: 1px solid rgb(168, 168, 168);
+  margin-right: 20px;
 }
 
 .social-content {
@@ -248,6 +265,7 @@ footer a {
   display: flex;
   flex-direction: column;
   flex-basis: 25%;
+  text-transform: capitalize;
 }
 
 .event-info a:hover {
@@ -259,6 +277,7 @@ footer a {
   display: flex;
   flex-direction: column;
   flex-basis: 25%;
+  text-transform: capitalize;
 }
 
 .registration a:hover {
@@ -279,6 +298,7 @@ footer a {
 
 .social-icons {
   display: flex;
+  margin-top: 10px;
 }
 
 .social-icons a {
@@ -287,7 +307,7 @@ footer a {
   background-color: orange;
   margin-right: 15px;
   text-align: center;
-  padding: 20px;
+  padding: 10px 15px;
   cursor: pointer;
 }
 

@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
               }" class="bike-image card-img-top" />
                   <div class="bike-details">
                     <h4 class="bike-name">${bike.name}</h4>
-                    <p class="bike-price">${bike.price.toLocaleString()}$</p>
+                    <p class="bike-price">${bike.price.toFixed()} $</p>
                   </div>
                 </div>
               `;
