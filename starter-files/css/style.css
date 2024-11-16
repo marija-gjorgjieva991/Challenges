@@ -1,5 +1,6 @@
 body {
   background-color: #d3d3d3;
+  /* box-sizing: border-box; */
 }
 
 h3,
@@ -15,20 +16,18 @@ h4 {
 
 header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
+  padding: 40px 20px 0px 20px;
 }
 
 .logo {
   width: 80px;
   height: 80px;
-  margin-left: 20px;
 }
 
 .menu {
   display: flex;
-  margin: 0px 160px;
 }
 
 .menu li {
