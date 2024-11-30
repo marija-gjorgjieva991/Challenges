@@ -89,3 +89,34 @@ h3 {
 }
 
 /* BANNER */
+
+/* DETAILS-BLOCK */
+
+.block-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.block-content {
+  flex-direction: column;
+  flex-basis: 50%;
+  margin-right: 50px;
+}
+
+.block-content span {
+  text-transform: uppercase;
+  color: orange;
+}
+.block-content h2 {
+  margin-top: 10px;
+}
+
+.block-details img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+/* DETAILS-BLOCK */
