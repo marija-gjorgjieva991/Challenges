@@ -48,3 +48,44 @@ h3 {
     font-size: 1.25rem; /* var.$font-size-medium */
   }
 }
+
+/* BANNER */
+.banner {
+  background-image: url("../public/116-3504x2336.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  height: 80vh;
+  display: flex;
+  position: relative;
+}
+
+.banner-content {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 35%;
+  left: 10%;
+}
+
+.banner-content span {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.banner-content h1 {
+  color: white;
+  margin: 0;
+}
+
+.banner-content button {
+  width: 30%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* BANNER */

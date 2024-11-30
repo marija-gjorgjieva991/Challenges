@@ -1,3 +1,5 @@
-const DetailsBlock = () => {};
+const DetailsBlock = () => {
+  return <></>;
+};
 
 export default DetailsBlock;

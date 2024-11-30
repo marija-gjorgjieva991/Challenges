@@ -1,3 +1,5 @@
-const Place = () => {};
+const Place = () => {
+  return <></>;
+};
 
 export default Place;

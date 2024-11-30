@@ -1,3 +1,5 @@
-const PlacesContainer = () => {};
+const PlacesContainer = () => {
+  return <></>;
+};
 
 export default PlacesContainer;
