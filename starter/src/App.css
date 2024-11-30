@@ -96,7 +96,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .block-content {
@@ -107,7 +107,7 @@ h3 {
 
 .block-content span {
   text-transform: uppercase;
-  color: orange;
+  color: #de8662;
 }
 .block-content h2 {
   margin-top: 10px;
@@ -151,3 +151,23 @@ h3 {
 }
 
 /* PLACES-CONTAINER */
+
+/* FOOTER */
+
+.footer {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.footer a {
+  color: #de8662;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: large;
+  padding: 10px;
+}
+
+/* FOOTER */
