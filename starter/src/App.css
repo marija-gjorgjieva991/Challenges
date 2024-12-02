@@ -61,6 +61,7 @@ h3 {
   object-fit: contain;
   height: 70vh;
   display: flex;
+  align-items: center;
   position: relative;
 }
 
@@ -68,8 +69,6 @@ h3 {
   display: flex;
   position: absolute;
   flex-direction: column;
-  top: 30%;
-  left: 50%;
   left: 10%;
 }
 
@@ -87,8 +86,10 @@ h3 {
 .banner-content button {
   width: 30%;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: 15px;
+  background-color: white;
   text-transform: uppercase;
+  cursor: pointer;
   border: none;
 }
 
