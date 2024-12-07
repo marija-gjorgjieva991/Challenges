@@ -7,12 +7,12 @@ const PlacesContainer = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5173/src/data/db.json");
+        const response = await fetch("http://localhost:5002/places");
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
         const data = await response.json();
-        setPlaces(data.places);
+        setPlaces(data);
       } catch (error) {
         ("Error fetching places data");
       }
@@ -20,6 +20,7 @@ const PlacesContainer = () => {
 
     fetchData();
   }, []);
+
   return (
     <>
       <div className="places-container">
