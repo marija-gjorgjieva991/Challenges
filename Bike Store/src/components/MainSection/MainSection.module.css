@@ -1,0 +1,17 @@
+.mainSection {
+  padding-left: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.heading {
+  padding: 0px 20px 10px 20px;
+}
+
+.heading h1 {
+  margin-bottom: 0;
+}
+
+.heading hr {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,59 @@
+.filtersContainer {
+  flex-basis: 20%;
+}
+
+.filtersContainer hr {
+  margin-top: 15px;
+}
+
+.filtersContainer p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.filtersContainer h3 {
+  margin-top: 0;
+}
+
+.filterCount {
+  background-color: rgb(96, 95, 95);
+  color: white;
+  padding: 0px 8px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.showAll {
+  text-transform: capitalize;
+}
+
+.brandList {
+  padding: 0;
+}
+
+.brandList li {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.brandCount {
+  background-color: rgb(96, 95, 95);
+  color: white;
+  padding: 0px 8px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.active {
+  color: orange;
+}
+
+.active span {
+  background-color: orange;
+}

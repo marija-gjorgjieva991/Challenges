@@ -1,0 +1,78 @@
+.footer {
+  background-color: #f6f7fb;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 60px 20px;
+}
+
+.footer h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.socialContent {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+}
+
+.eventInfo {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  text-transform: capitalize;
+}
+
+.eventInfo a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  text-transform: capitalize;
+}
+
+.registration a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+}
+
+.schedule a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.socialIcons a {
+  color: white;
+  text-decoration: none;
+  background-color: #ffb707;
+  margin-right: 15px;
+  text-align: center;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.socialIcons a:hover {
+  background-color: rgb(219, 144, 4);
+}
