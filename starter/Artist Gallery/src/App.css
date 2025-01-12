@@ -1,0 +1,162 @@
+body {
+  margin: 0 auto;
+  width: 35%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Navbar */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-image: url("../public/images/raw/Girls-Listen-Music_0.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-color: rgb(144, 142, 142);
+  background-blend-mode: multiply;
+}
+
+.nav h1 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+hr {
+  border: 4px solid aqua;
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+/* Artists List */
+
+.artistsList {
+  background-color: rgb(214, 209, 209);
+  padding: 15px;
+}
+
+.artistsList h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.artistItem {
+  margin-bottom: 15px;
+}
+
+.artistImage {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.artistItemContainer {
+  position: relative;
+}
+
+.artistBtn {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Artists List */
+
+/* Artist Page */
+
+.artistPage {
+  background-color: rgb(214, 209, 209);
+  padding: 15px;
+}
+
+.artistPage h2 {
+  text-align: center;
+}
+
+.artistPage p {
+  font-size: 20px;
+  text-align: center;
+  color: #5d5d5d;
+  margin-top: 0;
+}
+
+.artistImg {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.artistBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.albumsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Artist Page */
+
+/* Album Page */
+
+.albumPage {
+  background-color: rgb(214, 209, 209);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.albumPage img {
+  width: 150px;
+  height: 150px;
+}
+
+.albumPage span {
+  color: black;
+}
+
+.albumPage p {
+  font-size: 24px;
+  color: #5d5d5d;
+  margin-bottom: 0;
+}
+
+/* Album Page */
+
+/* Mobile responivity */
+
+@media screen and (max-width: 425px) {
+  body {
+    width: 100%;
+  }
+
+  .artistImage {
+    height: 400px;
+  }
+}
+
+/* Mobile responivity */
