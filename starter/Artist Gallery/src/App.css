@@ -42,7 +42,7 @@ hr {
 /* Artists List */
 
 .artistsList {
-  background-color: rgb(214, 209, 209);
+  background-color: #d3d3d3;
   padding: 15px;
 }
 
@@ -84,18 +84,19 @@ hr {
 /* Artist Page */
 
 .artistPage {
-  background-color: rgb(214, 209, 209);
+  background-color: #d3d3d3;
   padding: 15px;
 }
 
 .artistPage h2 {
   text-align: center;
+  margin-top: 15px;
 }
 
 .artistPage p {
   font-size: 20px;
   text-align: center;
-  color: #5d5d5d;
+  color: #686868;
   margin-top: 0;
 }
 
@@ -122,7 +123,7 @@ hr {
 /* Album Page */
 
 .albumPage {
-  background-color: rgb(214, 209, 209);
+  background-color: #d3d3d3;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -141,8 +142,9 @@ hr {
 
 .albumPage p {
   font-size: 24px;
-  color: #5d5d5d;
+  color: #686868;
   margin-bottom: 0;
+  margin-top: 10px;
 }
 
 /* Album Page */
