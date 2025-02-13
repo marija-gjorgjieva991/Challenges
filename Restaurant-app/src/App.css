@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  width: 90%;
+  margin: 0 auto;
+  font-family: Roboto, serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+h1,
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-surprise {
+  width: 100%;
+  background-color: #008001;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.cards-container a {
+  text-decoration: none;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.card-content {
+  background-color: rgb(247, 245, 245);
+  border-radius: 10px;
+}
+
+.card-content h3,
+p {
+  margin: 5px 0px;
+}
+
+.card-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurant-card {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.restaurant-card img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.box {
+  padding: 20px;
+}
+
+.box-p {
+  margin-top: 20px;
+}
+
+.box-details p {
+  margin-top: 10px;
+}
+
+.type {
+  color: #ff6247;
+}
+
+.cuisines-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.cuisines-buttons button {
+  padding: 10px;
+  background-color: #ff6247;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-form textarea {
+  border: 1px solid rgb(168, 168, 168);
+}
+
+.review {
+  background-color: rgb(247, 245, 245);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+.review p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.restaurant-detail img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.css-18awb4u-MuiButtonBase-root-MuiIconButton-root {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.MuiIconButton-root {
+  background: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+footer p {
+  margin-top: 20px;
+}
