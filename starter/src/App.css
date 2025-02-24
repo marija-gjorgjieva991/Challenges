@@ -1,0 +1,62 @@
+.welcome-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome-page img {
+  width: 40%;
+  height: 600px;
+}
+
+.welcome-page button {
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(58, 107, 171);
+  color: rgb(58, 107, 171);
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1565c0;
+  padding: 20px 10px;
+  color: white;
+}
+
+.logout-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+form {
+  padding-top: 100px;
+}
+
+.add-button {
+  background-color: blue;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.workouts-container {
+  border-bottom: 2px solid rgb(175, 174, 174);
+  padding: 10px;
+}
+
+.workout-div {
+  padding: 20px 0px;
+}
+
+.workout-div p,
+h3 {
+  margin: 0;
+}
