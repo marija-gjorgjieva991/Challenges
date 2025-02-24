@@ -121,7 +121,6 @@ const uploadWorkouts = async (userId: string) => {
 
 const uploadInitialData = async () => {
   if (localStorage.getItem("initialDataUploaded")) {
-    console.log("Initial data already uploaded.");
     return;
   }
 

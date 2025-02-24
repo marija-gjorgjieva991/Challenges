@@ -6,6 +6,7 @@ import { WorkoutItem } from "./WorkoutItem";
 
 const AllWorkouts = () => {
   const [workouts, setWorkouts] = useState<Workout[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchWorkouts = async () => {
@@ -22,14 +23,20 @@ const AllWorkouts = () => {
         setWorkouts(workoutsData);
       } catch (error) {
         console.error("Error fetching workouts:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchWorkouts();
   }, []);
 
+  if (loading) {
+    return;
+  }
+
   if (workouts.length === 0) {
-    return <div>No workouts yet. Add one!</div>;
+    return <div>No workouts available. Add your first workout!</div>;
   }
 
   return (

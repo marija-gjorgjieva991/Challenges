@@ -28,10 +28,10 @@ const AddNewWorkout: React.FC = () => {
     e.preventDefault();
     if (isSubmitting) return;
 
-    if (user && exerciseType) {
+    if (user) {
       const newWorkout: Workout = {
         id: new Date().toISOString(),
-        type: exerciseType,
+        type: (exerciseType || "") as WorkoutTypeName,
         duration,
         intensity,
         createdAt: Date.now(),
@@ -48,8 +48,6 @@ const AddNewWorkout: React.FC = () => {
       } finally {
         setIsSubmitting(false);
       }
-    } else {
-      console.log("Please log in to add a workout.");
     }
   };
 

@@ -52,7 +52,7 @@ const Welcome: React.FC = () => {
   return (
     <div className="welcome-page">
       <img src="/images/heroBanner.jpeg" alt="Banner-image" />
-      <div>
+      <div className="box">
         <h1>Your fitness journey starts here</h1>
         <button onClick={handleGoogleSignIn} disabled={loading}>
           Login

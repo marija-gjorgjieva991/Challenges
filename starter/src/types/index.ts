@@ -26,7 +26,7 @@ export type IntensityString = keyof typeof Intensity;
 
 export interface Workout {
   id: string;
-  type: WorkoutTypeName;
+  type?: WorkoutTypeName;
   duration: number;
   intensity: Intensity;
   createdAt?: number;
