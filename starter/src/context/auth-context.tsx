@@ -2,6 +2,7 @@ import React, { createContext, ReactNode, useState, useEffect } from "react";
 import { User, signOut } from "firebase/auth";
 import { auth } from "../firebase/index";
 import { onAuthStateChanged } from "firebase/auth";
+import useUserAuth from "../hooks/useUserAuth";
 
 const AuthContext = createContext<{
   user: User | null;
@@ -17,6 +18,8 @@ interface AuthProviderProps {
 
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
+
+  useUserAuth(user);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -42,7 +45,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => {
   return React.useContext(AuthContext);
 };

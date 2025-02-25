@@ -30,4 +30,5 @@ export interface Workout {
   duration: number;
   intensity: Intensity;
   createdAt?: number;
+  userId: string;
 }

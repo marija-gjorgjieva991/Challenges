@@ -15,7 +15,7 @@ import {
 import { MenuItem } from "@mui/material";
 
 const AddNewWorkout: React.FC = () => {
-  const user = useAuth();
+  const { user } = useAuth();
   const [exerciseType, setExerciseType] = useState<WorkoutTypeName | undefined>(
     undefined
   );
@@ -35,13 +35,13 @@ const AddNewWorkout: React.FC = () => {
         duration,
         intensity,
         createdAt: Date.now(),
+        userId: user.uid,
       };
 
       setIsSubmitting(true);
 
       try {
         await addDoc(collection(db, "workouts"), newWorkout);
-
         navigate("/all-workouts");
       } catch (error) {
         console.error("Error adding workout:", error);

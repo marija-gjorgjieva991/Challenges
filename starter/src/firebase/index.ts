@@ -4,6 +4,8 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   signOut,
+  onAuthStateChanged,
+  User,
 } from "firebase/auth";
 import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 import { getDatabase } from "firebase/database";
@@ -26,112 +28,81 @@ const googleProvider = new GoogleAuthProvider();
 
 export { auth, db, realtimeDb, googleProvider, signInWithPopup, signOut };
 
-const usersData = [
-  {
+const uploadUsers = async () => {
+  const usersCollection = collection(db, "users");
+  const user = {
     id: "user123",
     username: "john_doe",
     email: "john@example.com",
     password: "hashed_password_here",
-    createdAt: "2023-01-01T08:00:00Z",
-  },
-  {
-    id: "user456",
-    username: "jane_smith",
-    email: "jane@example.com",
-    password: "hashed_password_here",
-    createdAt: "2023-01-02T10:30:00Z",
-  },
-];
+    createdAt: new Date().toISOString(),
+  };
 
-const workoutsData = [
-  {
-    id: "1",
-    userId: "user123",
-    exerciseType: "Running",
-    duration: 30,
-    intensity: "Medium",
-    date: "2023-01-01T08:00:00Z",
-  },
-  {
-    id: "2",
-    userId: "user123",
-    exerciseType: "Cycling",
-    duration: 45,
-    intensity: "High",
-    date: "2023-01-02T10:30:00Z",
-  },
-  {
-    id: "3",
-    userId: "user456",
-    exerciseType: "Swimming",
-    duration: 60,
-    intensity: "Low",
-    date: "2023-01-03T15:15:00Z",
-  },
-];
+  try {
+    const querySnapshot = await getDocs(usersCollection);
+    const userExists = querySnapshot.docs.some(
+      (doc) => doc.data().id === user.id
+    );
 
-const uploadUsers = async () => {
-  const usersCollection = collection(db, "users");
-
-  for (const user of usersData) {
-    try {
-      const querySnapshot = await getDocs(usersCollection);
-      const userExists = querySnapshot.docs.some(
-        (doc) => doc.data().id === user.id
-      );
-
-      if (!userExists) {
-        await addDoc(usersCollection, user);
-        console.log(`User ${user.username} added successfully!`);
-      } else {
-        console.log(`User ${user.username} already exists!`);
-      }
-    } catch (error) {
-      console.error("Error adding user: ", error);
+    if (!userExists) {
+      await addDoc(usersCollection, user);
+      console.log(`User ${user.username} added successfully!`);
+    } else {
+      console.log(`User ${user.username} already exists!`);
     }
+  } catch (error) {
+    console.error("Error adding user: ", error);
   }
 };
 
 const uploadWorkouts = async (userId: string) => {
   const workoutsCollection = collection(db, "workouts");
-
-  const workoutsForUser = workoutsData.map((workout) => ({
-    ...workout,
+  const workout = {
+    id: "1",
     userId: userId,
-  }));
+    exerciseType: "Running",
+    duration: 30,
+    intensity: "Medium",
+    date: new Date().toISOString(),
+  };
 
-  for (const workout of workoutsForUser) {
-    try {
-      const querySnapshot = await getDocs(workoutsCollection);
-      const workoutExists = querySnapshot.docs.some(
-        (doc) => doc.data().id === workout.id
-      );
+  try {
+    const querySnapshot = await getDocs(workoutsCollection);
+    const workoutExists = querySnapshot.docs.some(
+      (doc) => doc.data().id === workout.id
+    );
 
-      if (!workoutExists) {
-        await addDoc(workoutsCollection, workout);
-        console.log(`Workout for user ${userId} added successfully!`);
-      } else {
-        console.log(`Workout for user ${userId} already exists!`);
-      }
-    } catch (error) {
-      console.error("Error adding workout: ", error);
+    if (!workoutExists) {
+      await addDoc(workoutsCollection, workout);
+      console.log(`Workout for user ${userId} added successfully!`);
+    } else {
+      console.log(`Workout for user ${userId} already exists!`);
     }
+  } catch (error) {
+    console.error("Error adding workout: ", error);
   }
 };
 
-const uploadInitialData = async () => {
+const uploadInitialData = async (user: User) => {
   if (localStorage.getItem("initialDataUploaded")) {
     return;
   }
 
-  const user = auth.currentUser;
   if (user) {
     await uploadUsers();
     await uploadWorkouts(user.uid);
     localStorage.setItem("initialDataUploaded", "true");
+    console.log("Initial data uploaded successfully!");
   } else {
     console.log("No user signed in. Please sign in first.");
   }
 };
 
-uploadInitialData();
+onAuthStateChanged(auth, async (authUser: User | null) => {
+  if (authUser) {
+    console.log("User signed in:", authUser);
+    await uploadInitialData(authUser);
+  } else {
+    console.log("No user signed in.");
+  }
+});

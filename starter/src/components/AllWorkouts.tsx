@@ -48,6 +48,7 @@ const AllWorkouts = () => {
           type={workout.type}
           duration={workout.duration}
           intensity={workout.intensity}
+          userId={workout.userId}
         />
       ))}
     </div>
